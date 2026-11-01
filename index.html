@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johnny Hardwood Flooring | Bangor, Maine | Sanding, Refinishing & Installation</title>
+  <meta name="description" content="Bring your hardwood floors back to life with Johnny Hardwood Flooring in Bangor, ME. Fully insured, free estimates for sanding, refinishing, repairs, and installations.">
+  <meta name="keywords" content="Hardwood floor refinishing Bangor Maine, floor sanding Bangor ME, hardwood floor installation, floor repair Bangor">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Johnny Hardwood Flooring - Bangor, Maine">
+  <meta property="og:description" content="Hardwood floor sanding, refinishing, repairs & installation. Fully Insured & Free Estimates. Call (207) 812-1455.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset & Design Tokens */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #c27838;
+      --primary-dark: #9d5a1f;
+      --primary-light: #f6ebe1;
+      --secondary: #1a232f;
+      --secondary-light: #2c3848;
+      --dark: #0f1723;
+      --light: #fdfaf6;
+      --cream: #f7f3ec;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-600: #4b5563;
+      --gray-800: #1f2937;
+      --success: #16a34a;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
+      --shadow-lg: 0 10px 25px rgba(0,0,0,0.12);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-body);
+      color: var(--gray-800);
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* TOP NOTICE BAR */
+    .top-bar {
+      background: var(--dark);
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .top-badges {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(194, 120, 56, 0.2);
+      border: 1px solid rgba(194, 120, 56, 0.4);
+      color: #f7ca97;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.3px;
+    }
+    .top-phone-links {
+      display: flex;
+      gap: 16px;
+      font-weight: 600;
+    }
+    .top-phone-links a {
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .top-phone-links a:hover {
+      color: var(--primary);
+    }
+
+    /* HEADER & NAV */
+    header {
+      background: #ffffff;
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-main {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--secondary);
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo-main svg {
+      color: var(--primary);
+    }
+    .logo-sub {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-top: -3px;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav-phone-block {
+      text-align: right;
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .nav-phone-block {
+        display: block;
+      }
+    }
+    .nav-phone-block .sub-label {
+      font-size: 0.75rem;
+      color: var(--gray-600);
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .nav-phone-block .phone-num {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.3px;
+    }
+    .nav-phone-block .phone-num:hover {
+      color: var(--primary);
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(194, 120, 56, 0.35);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(194, 120, 56, 0.45);
+    }
+    .btn-call {
+      background: #15803d;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(21, 128, 61, 0.35);
+    }
+    .btn-call:hover {
+      background: #166534;
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: #fff;
+      color: var(--dark);
+      border: 1px solid var(--gray-200);
+    }
+    .btn-secondary:hover {
+      background: var(--gray-100);
+      border-color: var(--gray-400);
+    }
+    .btn-lg {
+      padding: 16px 32px;
+      font-size: 1.05rem;
+      border-radius: var(--radius-sm);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, rgba(15, 23, 35, 0.92) 0%, rgba(26, 35, 47, 0.88) 100%),
+                  url('https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 70px 0 90px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+    }
+    .hero-content {
+      max-width: 650px;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(194, 120, 56, 0.25);
+      border: 1px solid rgba(194, 120, 56, 0.6);
+      color: #fbd6a6;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3.4rem;
+      }
+    }
+    .hero h1 span {
+      color: #f1b373;
+      font-style: italic;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+      margin-bottom: 30px;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 35px;
+    }
+    .hero-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 25px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+    .feature-item svg {
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    /* HERO FORM CARD */
+    .hero-form-card {
+      background: #ffffff;
+      color: var(--dark);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      position: relative;
+    }
+    .form-header {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .form-header h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    .form-header p {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+    }
+    .form-group {
+      margin-bottom: 14px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(194, 120, 56, 0.15);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .form-submit-btn {
+      width: 100%;
+      margin-top: 10px;
+      padding: 15px;
+      font-size: 1.05rem;
+    }
+    .form-note {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--gray-600);
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--cream);
+      padding: 24px 0;
+      border-bottom: 1px solid #ebd9c8;
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @media (min-width: 768px) {
+      .trust-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .trust-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      box-shadow: var(--shadow-sm);
+      flex-shrink: 0;
+    }
+    .trust-text h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.2;
+    }
+    .trust-text p {
+      font-size: 0.78rem;
+      color: var(--gray-600);
+    }
+
+    /* SECTION STYLING */
+    section {
+      padding: 80px 0;
+    }
+    .section-title-wrap {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+    .section-eyebrow {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 2.6rem;
+      }
+    }
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--gray-600);
+    }
+
+    /* BEFORE / AFTER SHOWCASE */
+    .transformation-section {
+      background: #fff;
+    }
+    .before-after-container {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+    .comparison-slider {
+      position: relative;
+      width: 100%;
+      height: 460px;
+      overflow: hidden;
+      user-select: none;
+    }
+    @media (max-width: 600px) {
+      .comparison-slider {
+        height: 320px;
+      }
+    }
+    .comparison-slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .slider-img-after {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 50%; /* Initial split */
+    }
+    .slider-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background: #ffffff;
+      cursor: ew-resize;
+      z-index: 10;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .slider-handle-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      background: #ffffff;
+      color: var(--dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .badge-before, .badge-after {
+      position: absolute;
+      bottom: 20px;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      color: #fff;
+      z-index: 5;
+    }
+    .badge-before {
+      right: 20px;
+      background: rgba(15, 23, 35, 0.75);
+    }
+    .badge-after {
+      left: 20px;
+      background: rgba(194, 120, 56, 0.9);
+    }
+    .slider-instruction {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--gray-600);
+      margin-top: 10px;
+    }
+
+    /* GALLERY GRID */
+    .mini-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .gallery-card {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    .gallery-card-img {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .gallery-card:hover .gallery-card-img img {
+      transform: scale(1.05);
+    }
+    .gallery-card-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(15, 23, 35, 0.85);
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .gallery-card-content {
+      padding: 16px;
+    }
+    .gallery-card-content h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--dark);
+    }
+    .gallery-card-content p {
+      font-size: 0.85rem;
+      color: var(--gray-600);
+    }
+
+    /* SERVICES SECTION */
+    .services-section {
+      background: var(--light);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    @media (min-width: 640px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .service-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--gray-200);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #dfc2a6;
+    }
+    .service-img {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    .service-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .service-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .service-body h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+    .service-body p {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+    .service-bullets {
+      list-style: none;
+      margin-bottom: 20px;
+      border-top: 1px dashed var(--gray-200);
+      padding-top: 14px;
+    }
+    .service-bullets li {
+      font-size: 0.85rem;
+      color: var(--gray-800);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .service-bullets li svg {
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    .service-cta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .service-cta a {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .service-cta a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    /* WHY CHOOSE US */
+    .why-section {
+      background: #ffffff;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .why-content h2 {
+      font-family: var(--font-heading);
+      font-size: 2.3rem;
+      color: var(--dark);
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .why-content p.lead {
+      font-size: 1.05rem;
+      color: var(--gray-600);
+      margin-bottom: 25px;
+    }
+    .why-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 30px;
+    }
+    .why-item {
+      display: flex;
+      gap: 16px;
+    }
+    .why-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .why-item-text h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .why-item-text p {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+    }
+    .why-image-card {
+      position: relative;
+    }
+    .why-image-card img {
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+    }
+    .business-card-badge {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      right: 20px;
+      background: var(--dark);
+      color: #fff;
+      padding: 20px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      border-left: 5px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    @media (max-width: 600px) {
+      .business-card-badge {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: 15px;
+      }
+    }
+    .bc-info h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .bc-info p {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    .bc-phones {
+      display: flex;
+      gap: 12px;
+    }
+
+    /* PROCESS */
+    .process-section {
+      background: var(--cream);
+    }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+    .process-step {
+      background: #ffffff;
+      padding: 30px 24px;
+      border-radius: var(--radius-md);
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+    .step-number {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+      line-height: 1;
+    }
+    .process-step h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+    .process-step p {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+      line-height: 1.5;
+    }
+
+    /* TESTIMONIALS */
+    .reviews-section {
+      background: #fff;
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .review-card {
+      background: var(--light);
+      border: 1px solid var(--gray-200);
+      padding: 28px;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+    }
+    .stars {
+      color: #f59e0b;
+      margin-bottom: 14px;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+    }
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--gray-800);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .reviewer-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .reviewer-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--secondary);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .reviewer-info h5 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+    .reviewer-info span {
+      font-size: 0.8rem;
+      color: var(--gray-600);
+    }
+
+    /* SERVICE AREA */
+    .service-area-section {
+      background: var(--secondary);
+      color: #fff;
+      padding: 60px 0;
+    }
+    .service-area-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .service-area-grid {
+        grid-template-columns: 1.2fr 1fr;
+      }
+    }
+    .service-area-content h2 {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .service-area-content p {
+      color: #cbd5e1;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    .towns-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .town-pill {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .town-pill.highlight {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .area-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 24px;
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+    .area-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+      color: #fbd6a6;
+    }
+    .area-card p {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    /* FAQ ACCORDION */
+    .faq-section {
+      background: #ffffff;
+    }
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--gray-200);
+      padding: 18px 0;
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dark);
+      user-select: none;
+    }
+    .faq-question svg {
+      transition: transform 0.25s ease;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    .faq-item.active .faq-question svg {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      color: var(--gray-600);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 250px;
+      padding-top: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #94a3b8;
+      padding: 60px 0 30px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.9rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+      }
+    }
+    .footer-brand h3 {
+      font-family: var(--font-heading);
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    .footer-brand p {
+      max-width: 380px;
+      margin-bottom: 16px;
+      color: #94a3b8;
+      font-size: 0.88rem;
+    }
+    .footer-badges {
+      display: flex;
+      gap: 10px;
+    }
+    .footer-col h4 {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 25px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    /* STICKY BOTTOM CALL BAR FOR MOBILE */
+    .mobile-sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.12);
+      padding: 10px 16px;
+      z-index: 999;
+      display: flex;
+      gap: 10px;
+      border-top: 1px solid var(--gray-200);
+    }
+    @media (min-width: 769px) {
+      .mobile-sticky-bar {
+        display: none;
+      }
+    }
+    .mobile-sticky-bar a {
+      flex: 1;
+      padding: 12px 10px;
+      font-size: 0.9rem;
+    }
+
+    /* MODAL FOR SUCCESS / FORM NOTIFICATION */
+    .toast-notice {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #15803d;
+      color: #fff;
+      padding: 14px 22px;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-lg);
+      font-size: 0.95rem;
+      font-weight: 600;
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      animation: slideIn 0.3s ease;
+    }
+    @keyframes slideIn {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+  </style>
+
+  <!-- LocalBusiness Schema for Google Local SEO & Ads -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Johnny Hardwood Flooring",
+    "image": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+1-207-812-1455",
+    "telephone2": "+1-207-667-7070",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangor",
+      "addressRegion": "ME",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.8016,
+      "longitude": -68.7712
+    },
+    "areaServed": [
+      "Bangor, ME",
+      "Brewer, ME",
+      "Orono, ME",
+      "Hampden, ME",
+      "Hermon, ME",
+      "Old Town, ME",
+      "Ellsworth, ME"
+    ],
+    "priceRange": "$$",
+    "openingHours": "Mo-Sa 07:00-18:00",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Hardwood Flooring Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hardwood Floor Sanding"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hardwood Floor Refinishing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hardwood Floor Installation"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hardwood Floor Repair"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Floor Staining"}}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-badges">
+        <span class="badge-pill">🛡️ FULLY INSURED</span>
+        <span class="badge-pill">📋 FREE ESTIMATES</span>
+        <span>Residential & Commercial</span>
+      </div>
+      <div class="top-phone-links">
+        <span>Serving Bangor, ME & Surrounding Areas</span>
+        <a href="tel:2078121455">📞 (207) 812-1455</a>
+        <a href="tel:2076677070">📞 (207) 667-7070</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="logo">
+          <span class="logo-main">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3h18v18H3zM3 9h18M3 15h18M9 3v6M15 9v6M9 15v6"/>
+            </svg>
+            Johnny Hardwood Flooring
+          </span>
+          <span class="logo-sub">Bangor, Maine • Expert Floor Restoration</span>
+        </a>
+
+        <div class="nav-actions">
+          <div class="nav-phone-block">
+            <div class="sub-label">Need a fast quote? Call Johnny</div>
+            <a href="tel:2078121455" class="phone-num">(207) 812-1455</a>
+          </div>
+          <a href="#quote-form" class="btn btn-primary">Get Free Estimate</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            📍 Bangor, Maine Local Contractor • Fully Insured
+          </div>
+          <h1>Bring Your Hardwood Floors <span>Back to Life</span></h1>
+          <p class="hero-sub">
+            Whether your floors are scratched, faded, or in need of brand new installation, Johnny Hardwood Flooring delivers master-grade craftsmanship for Bangor homeowners and businesses.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="tel:2078121455" class="btn btn-call btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call for Free Estimate: (207) 812-1455
+            </a>
+            <a href="#quote-form" class="btn btn-secondary btn-lg">Request Online Quote</a>
+          </div>
+
+          <div class="hero-features">
+            <div class="feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Free On-Site Estimates
+            </div>
+            <div class="feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Fully Insured Coverage
+            </div>
+            <div class="feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Residential & Commercial
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO QUICK FORM -->
+        <div class="hero-form-card" id="quote-form">
+          <div class="form-header">
+            <h2>Get Your Free Estimate</h2>
+            <p>Tell us about your project & we'll call you right back.</p>
+          </div>
+          <form id="leadForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" required class="form-control" placeholder="e.g. John Miller">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" required class="form-control" placeholder="(207) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="zipcode">ZIP Code *</label>
+                <input type="text" id="zipcode" required class="form-control" placeholder="04401">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Needed *</label>
+              <select id="service" required class="form-control">
+                <option value="" disabled selected>Select a Service</option>
+                <option value="Refinishing">Hardwood Floor Refinishing</option>
+                <option value="Sanding">Floor Sanding</option>
+                <option value="Installation">Hardwood Installation</option>
+                <option value="Repairs">Floor Repairs & Board Replacement</option>
+                <option value="Staining">Custom Staining / Color Change</option>
+                <option value="Multiple">Multiple Services / Whole Home</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="details">Project Details (Optional)</label>
+              <textarea id="details" rows="2" class="form-control" placeholder="Room count, approximate sq ft, current wood condition..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              Claim Your Free Estimate
+            </button>
+            <p class="form-note">
+              🔒 No spam, ever. Your info is safe with Johnny Hardwood Flooring.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Fully Insured</h4>
+            <p>Peace of mind for home & business</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>100% Free Estimates</h4>
+            <p>Honest & transparent pricing</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Local Bangor Specialist</h4>
+            <p>Proudly serving Central Maine</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Res & Commercial</h4>
+            <p>Houses, apartments, offices & shops</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: BEFORE & AFTER SHOWCASE -->
+  <section class="transformation-section" id="work">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Real Transformations</span>
+        <h2 class="section-title">See The Difference Quality Craftsmanship Makes</h2>
+        <p class="section-desc">
+          Drag the slider below to see how our sanding and refinishing process turns old, scratched hardwood into a stunning, mirror-smooth centerpiece.
+        </p>
+      </div>
+
+      <!-- INTERACTIVE BEFORE/AFTER SLIDER -->
+      <div class="before-after-container">
+        <div class="comparison-slider" id="compSlider">
+          <!-- BEFORE IMAGE (Background) -->
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Scratched floor before refinishing">
+          <span class="badge-before">Before Sanding</span>
+
+          <!-- AFTER IMAGE (Foreground Clipped) -->
+          <div class="slider-img-after" id="afterContainer">
+            <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=80" alt="Beautiful refinished hardwood floor">
+            <span class="badge-after">After Johnny's Refinishing</span>
+          </div>
+
+          <!-- DRAGGABLE DIVIDER -->
+          <div class="slider-handle" id="sliderHandle">
+            <div class="slider-handle-button">↔</div>
+          </div>
+        </div>
+        <div class="slider-instruction">
+          👉 Drag the divider left or right to compare
+        </div>
+      </div>
+
+      <!-- GALLERY CARDS -->
+      <div class="mini-gallery">
+        <div class="gallery-card">
+          <div class="gallery-card-img">
+            <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=600&q=80" alt="Oak floor sanding in Bangor">
+            <span class="gallery-card-tag">Dustless Sanding</span>
+          </div>
+          <div class="gallery-card-content">
+            <h4>Precision Sanding & Prep</h4>
+            <p>Even, smooth surfaces ready for deep staining or clear protective coating.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-card-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Custom dark walnut floor staining">
+            <span class="gallery-card-tag">Custom Staining</span>
+          </div>
+          <div class="gallery-card-content">
+            <h4>Modern Dark Oak & Walnut Tones</h4>
+            <p>Transforming outdated yellowed pine or oak into warm, contemporary tones.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-card-img">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="New hardwood floor installation">
+            <span class="gallery-card-tag">New Installation</span>
+          </div>
+          <div class="gallery-card-content">
+            <h4>Tight-Seam Hardwood Installation</h4>
+            <p>Solid and engineered wood flooring built to last decades of heavy foot traffic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: SERVICES -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Our Core Specialties</span>
+        <h2 class="section-title">Complete Hardwood Floor Solutions</h2>
+        <p class="section-desc">
+          From historic restorations to new custom builds, we handle every plank with precision, pride, and proper care.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- SERVICE 1 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1502005229762-ee1b2b8ab275?auto=format&fit=crop&w=600&q=80" alt="Floor Sanding Bangor Maine">
+          </div>
+          <div class="service-body">
+            <h3>Hardwood Floor Sanding</h3>
+            <p>
+              Remove deep scratches, pet stains, water marks, and uneven wear down to raw, healthy wood with professional sanding equipment.
+            </p>
+            <ul class="service-bullets">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Dust-contained sanding systems
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Smooth, uniform finish without gouging
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Preps perfectly for stain or poly
+              </li>
+            </ul>
+            <div class="service-cta">
+              <a href="#quote-form">Get Sanding Quote &rarr;</a>
+              <a href="tel:2078121455" style="color: #15803d; font-weight: 700;">📞 Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICE 2 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=600&q=80" alt="Hardwood Floor Refinishing">
+          </div>
+          <div class="service-body">
+            <h3>Floor Refinishing & Sealing</h3>
+            <p>
+              Revitalize dull floors with commercial-grade polyurethane finishes. Choose from matte, satin, semi-gloss, or high-gloss protective coats.
+            </p>
+            <ul class="service-bullets">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Heavy-duty scratch & moisture barrier
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Eco-friendly, fast-curing coatings
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Long-lasting residential & commercial shine
+              </li>
+            </ul>
+            <div class="service-cta">
+              <a href="#quote-form">Get Refinishing Quote &rarr;</a>
+              <a href="tel:2078121455" style="color: #15803d; font-weight: 700;">📞 Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICE 3 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Hardwood Floor Installation">
+          </div>
+          <div class="service-body">
+            <h3>Hardwood Installation</h3>
+            <p>
+              Professional installation of solid hardwood, engineered plank, and traditional wood species tailored to Maine's climate variations.
+            </p>
+            <ul class="service-bullets">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Proper subfloor prep & moisture testing
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Tight seams and accurate expansion gaps
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Residential homes, rentals & retail shops
+              </li>
+            </ul>
+            <div class="service-cta">
+              <a href="#quote-form">Get Installation Quote &rarr;</a>
+              <a href="tel:2078121455" style="color: #15803d; font-weight: 700;">📞 Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICE 4 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="Floor Repairs and Board Replacement">
+          </div>
+          <div class="service-body">
+            <h3>Repairs & Board Replacement</h3>
+            <p>
+              Don't replace the entire floor if only a few boards are damaged. We weave in matching wood planks to fix localized water damage, holes, or buckling.
+            </p>
+            <ul class="service-bullets">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Seamless wood species matching
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Fix squeaks, gaps, and soft spots
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Cost-effective alternative to redoing all rooms
+              </li>
+            </ul>
+            <div class="service-cta">
+              <a href="#quote-form">Get Repair Quote &rarr;</a>
+              <a href="tel:2078121455" style="color: #15803d; font-weight: 700;">📞 Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICE 5 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Custom Wood Floor Staining">
+          </div>
+          <div class="service-body">
+            <h3>Custom Staining & Color Matching</h3>
+            <p>
+              Update your interior aesthetic with custom wood stains. From modern Nordic light oak to dramatic dark espresso and warm heritage tones.
+            </p>
+            <ul class="service-bullets">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                On-site color testing on your actual wood
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Bleaching, gray tones, golden & dark stains
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Uniform penetration with no blotchiness
+              </li>
+            </ul>
+            <div class="service-cta">
+              <a href="#quote-form">Get Staining Quote &rarr;</a>
+              <a href="tel:2078121455" style="color: #15803d; font-weight: 700;">📞 Call</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICE 6: COMMERCIAL -->
+        <div class="service-card" style="border-top: 4px solid var(--primary);">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Commercial Hardwood Flooring Bangor">
+          </div>
+          <div class="service-body">
+            <h3>Commercial Flooring Solutions</h3>
+            <p>
+              High-traffic polyurethane coatings and fast turnaround times for Bangor stores, restaurants, offices, studios, and rental complexes.
+            </p>
+            <ul class="service-bullets">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Flexible off-hours & weekend scheduling
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Heavy-duty commercial wear resistance
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Fully insured with commercial COI available
+              </li>
+            </ul>
+            <div class="service-cta">
+              <a href="#quote-form">Commercial Quote &rarr;</a>
+              <a href="tel:2078121455" style="color: #15803d; font-weight: 700;">📞 Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHY CHOOSE JOHNNY -->
+  <section class="why-section" id="why-us">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content">
+          <span class="section-eyebrow">The Johnny Hardwood Difference</span>
+          <h2>Why Bangor Homeowners & Businesses Trust Us</h2>
+          <p class="lead">
+            Refinishing hardwood is an art and a science. When you work with Johnny, you get dedicated attention from an experienced craftsman who treats your home with respect.
+          </p>
+
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="why-item-text">
+                <h4>Fully Insured For Your Protection</h4>
+                <p>We carry comprehensive general liability insurance so you never have to worry while we are working on your property.</p>
+              </div>
+            </div>
+
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div class="why-item-text">
+                <h4>Prompt & 100% Free Estimates</h4>
+                <p>We visit your site, assess your wood's thickness and condition, and provide an upfront written quote with zero high-pressure tactics.</p>
+              </div>
+            </div>
+
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <div class="why-item-text">
+                <h4>Commercial-Grade Finishes & Stains</h4>
+                <p>We only use premium, durable coatings that withstand pets, kids, winter boots, and years of everyday family life.</p>
+              </div>
+            </div>
+
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="why-item-text">
+                <h4>Local Maine Accountability</h4>
+                <p>We are locally rooted in Bangor, Maine. Our reputation is built on delivering great work and keeping our promises.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <a href="tel:2078121455" class="btn btn-primary">
+              Call Johnny: (207) 812-1455
+            </a>
+            <span style="font-size: 0.88rem; color: var(--gray-600);">Or dial: <a href="tel:2076677070" style="font-weight: 700; color: var(--dark);">(207) 667-7070</a></span>
+          </div>
+        </div>
+
+        <div class="why-image-card">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Johnny Hardwood Flooring Craftsmanship">
+          
+          <div class="business-card-badge">
+            <div class="bc-info">
+              <h4>Johnny Hardwood Flooring</h4>
+              <p>Sanding • Refinishing • Installation • Repair • Staining</p>
+              <div style="margin-top: 6px; font-size: 0.8rem; color: #f1b373; font-weight: 700;">
+                Bangor, ME • Residential & Commercial • Fully Insured
+              </div>
+            </div>
+            <div class="bc-phones">
+              <a href="tel:2078121455" class="btn btn-call" style="padding: 8px 14px; font-size: 0.85rem;">📞 Call 207-812-1455</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Hassle-Free Process</span>
+        <h2 class="section-title">How Getting Your Floors Done Works</h2>
+        <p class="section-desc">We make wood floor restoration simple, transparent, and stress-free from the first phone call.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h4>Call or Request Online</h4>
+          <p>Give us a call or submit the quick form. We will discuss your square footage, timeline, and schedule a convenient on-site visit.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h4>Free On-Site Assessment</h4>
+          <p>We inspect your floor condition, check wood thickness, test sample stain swatches, and hand you a straightforward, written quote.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h4>Expert Craftsmanship</h4>
+          <p>Johnny completes the sanding, repair, staining, and protective sealing cleanly and on schedule, treating your property with care.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h4>Final Walkthrough</h4>
+          <p>We inspect the finished floor together to ensure 100% satisfaction before you move your furniture back onto your gleaming floors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Local Feedback</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-desc">Proudly serving neighbors throughout Bangor, Brewer, Orono, and surrounding communities.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            “Johnny took our 70-year-old worn oak floors and made them look like they were installed yesterday! Clean work, showed up right on time, and the price was exactly what he quoted. Highly recommend to anyone in the Bangor area.”
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">MT</div>
+            <div class="reviewer-info">
+              <h5>Mark T.</h5>
+              <span>Bangor, Maine • Refinishing Project</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            “We had pet water damage in the living room and thought we'd have to tear up everything. Johnny replaced the bad boards seamlessly, sanded the room, and matched the custom stain perfectly. He is fully insured and super professional.”
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">SL</div>
+            <div class="reviewer-info">
+              <h5>Sarah L.</h5>
+              <span>Hampden, Maine • Board Repair & Staining</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            “Johnny did our commercial store floor in downtown Bangor over a holiday weekend so we didn't lose any business hours. Tough commercial finish and fair pricing. A true local craftsman.”
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">DR</div>
+            <div class="reviewer-info">
+              <h5>Dave R.</h5>
+              <span>Brewer, Maine • Commercial Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA SECTION -->
+  <section class="service-area-section">
+    <div class="container">
+      <div class="service-area-grid">
+        <div class="service-area-content">
+          <span style="color: #f1b373; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.8rem;">Local Service Area</span>
+          <h2>Serving Bangor & Penobscot County</h2>
+          <p>
+            We bring our specialized hardwood equipment directly to your residential home or commercial establishment throughout central and eastern Maine.
+          </p>
+
+          <div class="towns-pills">
+            <span class="town-pill highlight">📍 Bangor</span>
+            <span class="town-pill">Brewer</span>
+            <span class="town-pill">Orono</span>
+            <span class="town-pill">Hampden</span>
+            <span class="town-pill">Hermon</span>
+            <span class="town-pill">Old Town</span>
+            <span class="town-pill">Glenburn</span>
+            <span class="town-pill">Veazie</span>
+            <span class="town-pill">Ellsworth</span>
+            <span class="town-pill">Winterport</span>
+          </div>
+        </div>
+
+        <div class="area-card">
+          <h3>Not Sure If We Service Your Town?</h3>
+          <p>Give us a quick call. If you are within 40 miles of Bangor, we are glad to discuss your project and visit for a free estimate!</p>
+          <a href="tel:2078121455" class="btn btn-primary" style="width: 100%;">
+            📞 Call (207) 812-1455
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know before restoring or installing your hardwood floors.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>How long does hardwood floor refinishing typically take?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            Most typical residential projects (300 to 800 sq ft) take between 2 to 4 days, depending on sanding depth, repairs needed, stain color drying time, and number of protective top coats. We will give you an exact schedule during your free estimate.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are your estimates really free with no obligation?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            Yes, 100% free! Johnny will inspect your floors, measure the area, evaluate existing wear, answer all your questions, and give you an honest price in writing. No pressure and no hidden fees.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are you fully insured for both residential and commercial work?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            Yes, Johnny Hardwood Flooring is fully insured. We carry liability coverage protecting your residential home or commercial property throughout the duration of the project.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can you fix floors that have water damage or deep dog scratches?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            In most cases, yes! Surface scratches sand right out. If specific boards are rotten, stained black from prolonged moisture, or split, we can selectively weave in replacement hardwood boards before sanding and staining for a seamless look.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which phone number should I call?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            You can reach us at either <strong>(207) 812-1455</strong> or <strong>(207) 667-7070</strong>. If we are operating sanding machines, please leave a brief voicemail or submit our online form, and Johnny will return your call promptly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CALL-TO-ACTION -->
+  <section style="background: linear-gradient(rgba(15, 23, 35, 0.95), rgba(15, 23, 35, 0.95)), url('https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 70px 0;">
+    <div class="container" style="max-width: 750px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.4rem; margin-bottom: 15px;">Ready to Transform Your Hardwood Floors?</h2>
+      <p style="font-size: 1.1rem; color: #cbd5e1; margin-bottom: 30px;">
+        Schedule your free in-home estimate in Bangor, Maine today. Fast response, expert craftsmanship, and honest pricing.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <a href="tel:2078121455" class="btn btn-call btn-lg">
+          📞 Call (207) 812-1455
+        </a>
+        <a href="#quote-form" class="btn btn-primary btn-lg">
+          Request Free Estimate Online
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-main" style="color: #fff; font-size: 1.4rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+              <path d="M3 3h18v18H3zM3 9h18M3 15h18M9 3v6M15 9v6M9 15v6"/>
+            </svg>
+            Johnny Hardwood Flooring
+          </div>
+          <p>
+            Bangor, Maine's dedicated specialist in hardwood floor sanding, refinishing, installation, repairs, and staining for residential homes and commercial spaces.
+          </p>
+          <div class="footer-badges">
+            <span class="badge-pill">🛡️ Fully Insured</span>
+            <span class="badge-pill">📋 Free Estimates</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Floor Sanding</a></li>
+            <li><a href="#services">Floor Refinishing</a></li>
+            <li><a href="#services">Hardwood Installation</a></li>
+            <li><a href="#services">Floor Repairs & Board Replacement</a></li>
+            <li><a href="#services">Custom Staining</a></li>
+            <li><a href="#services">Commercial Flooring</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Johnny</h4>
+          <ul class="footer-links">
+            <li>📍 Bangor, Maine & Surrounding</li>
+            <li>📞 <a href="tel:2078121455">(207) 812-1455</a></li>
+            <li>📞 <a href="tel:2076677070">(207) 667-7070</a></li>
+            <li>⏰ Mon – Sat: 7:00 AM – 6:00 PM</li>
+            <li>Sunday: By Appointment</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Johnny Hardwood Flooring. All Rights Reserved. Fully Insured Contractor in Bangor, ME.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BOTTOM CALL BAR -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:2078121455" class="btn btn-call">
+      📞 Call Now (207) 812-1455
+    </a>
+    <a href="#quote-form" class="btn btn-primary">
+      Free Estimate
+    </a>
+  </div>
+
+  <!-- TOAST NOTIFICATION FOR FORM -->
+  <div class="toast-notice" id="toastNotice">
+    <span>✅ Thank you! Johnny will call you shortly for your free estimate.</span>
+  </div>
+
+  <!-- JAVASCRIPT: Interactive Slider & Form Handling -->
+  <script>
+    // Set Current Year in Footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // INTERACTIVE BEFORE / AFTER SLIDER
+    const compSlider = document.getElementById('compSlider');
+    const afterContainer = document.getElementById('afterContainer');
+    const sliderHandle = document.getElementById('sliderHandle');
+    let isDragging = false;
+
+    function updateSlider(xPos) {
+      const rect = compSlider.getBoundingClientRect();
+      let pos = (xPos - rect.left) / rect.width;
+      if (pos < 0) pos = 0;
+      if (pos > 1) pos = 1;
+      const percentage = pos * 100;
+      afterContainer.style.width = percentage + '%';
+      sliderHandle.style.left = percentage + '%';
+    }
+
+    compSlider.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      updateSlider(e.clientX);
+    });
+
+    window.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      updateSlider(e.clientX);
+    });
+
+    // Touch events for mobile
+    compSlider.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      updateSlider(e.touches[0].clientX);
+    }, { passive: true });
+
+    window.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+
+    window.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      updateSlider(e.touches[0].clientX);
+    }, { passive: true });
+
+    // FAQ ACCORDION TOGGLE
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // FORM SUBMISSION HANDLER
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const zipcode = document.getElementById('zipcode').value;
+      const service = document.getElementById('service').value;
+      const details = document.getElementById('details').value;
+
+      // Google Ads Conversion Tracking hook (ready for gtag or GTM)
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          'event_category': 'Contact',
+          'event_label': service
+        });
+      }
+
+      // Display Toast
+      const toast = document.getElementById('toastNotice');
+      toast.style.display = 'flex';
+      
+      // Reset form
+      document.getElementById('leadForm').reset();
+
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
