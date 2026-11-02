@@ -87,12 +87,12 @@
       width: 100%;
       max-width: 1180px;
       margin: 0 auto;
-      padding: 0 16px;
+      padding: 0 24px;
     }
 
     @media (min-width: 768px) {
       .container {
-        padding: 0 24px;
+        padding: 0 32px;
       }
     }
 
@@ -227,21 +227,25 @@
     .nav-phone-block .phone-num:hover {
       color: var(--primary);
     }
-    /* Mobile Quick Call Button on Header */
-    .mobile-header-call {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: var(--call-green);
-      color: #fff;
-      padding: 8px 12px;
-      border-radius: var(--radius-sm);
-      font-size: 0.82rem;
-      font-weight: 700;
-    }
-    @media (min-width: 769px) {
-      .mobile-header-call {
-        display: none;
+    @media (max-width: 767px) {
+      .nav-wrapper {
+        justify-content: center;
+        text-align: center;
+        padding: 14px 0;
+      }
+      .logo {
+        align-items: center;
+        text-align: center;
+      }
+      .logo-main {
+        justify-content: center;
+        font-size: 1.35rem;
+      }
+      .logo-sub {
+        text-align: center;
+      }
+      .nav-actions {
+        display: none !important;
       }
     }
 
@@ -1194,6 +1198,84 @@
       font-size: 0.75rem;
     }
 
+    /* MOBILE-SPECIFIC ALIGNMENT & SPACING */
+    @media (max-width: 767px) {
+      .top-bar {
+        text-align: center;
+      }
+      .top-bar .container {
+        justify-content: center;
+        text-align: center;
+      }
+      .top-badges {
+        justify-content: center;
+      }
+      .top-phone-links {
+        justify-content: center;
+        width: 100%;
+      }
+      .hero-content {
+        text-align: center;
+        margin: 0 auto;
+      }
+      .hero-eyebrow {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-cta-group {
+        justify-content: center;
+      }
+      .hero-features {
+        justify-content: center;
+      }
+      .feature-item {
+        justify-content: center;
+      }
+      .service-area-content {
+        text-align: center;
+      }
+      .towns-pills {
+        justify-content: center;
+      }
+      footer {
+        text-align: center;
+        padding: 45px 0 25px;
+      }
+      .footer-grid {
+        text-align: center;
+        gap: 32px;
+      }
+      .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .footer-brand .logo-main {
+        justify-content: center;
+      }
+      .footer-brand p {
+        margin: 0 auto 14px auto;
+        text-align: center;
+      }
+      .footer-badges {
+        justify-content: center;
+      }
+      .footer-col {
+        text-align: center;
+      }
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+      }
+      .footer-links li {
+        text-align: center;
+      }
+    }
+
     /* STICKY BOTTOM CALL BAR FOR MOBILE - SUPER OPTIMIZED */
     .mobile-sticky-bar {
       position: fixed;
@@ -1342,14 +1424,11 @@
         </a>
 
         <div class="nav-actions">
-          <a href="tel:2078121455" class="mobile-header-call">
-            📞 (207) 812-1455
-          </a>
           <div class="nav-phone-block">
             <div class="sub-label">Call Johnny For Estimates</div>
             <a href="tel:2078121455" class="phone-num">(207) 812-1455</a>
           </div>
-          <a href="#quote-form" class="btn btn-primary" style="display: none; @media(min-width: 600px){display:inline-flex;}">Free Estimate</a>
+          <a href="#quote-form" class="btn btn-primary">Free Estimate</a>
         </div>
       </div>
     </div>
@@ -1959,7 +2038,7 @@
         <div class="footer-col">
           <h4>Contact & Hours</h4>
           <ul class="footer-links">
-            <li>📍 <strong>Address:</strong><br><a href="https://maps.google.com/?q=117+Harthorn+Ave,+Bangor,+ME+04401" target="_blank" rel="noopener" style="color:#e2e8f0; text-decoration: underline;">117 Harthorn Ave, Bangor, ME 04401</a></li>
+            <li>📍 <strong>Address:</strong><br><a href="https://maps.google.com/?q=117+Harthorn+Ave,+Bangor,+ME+04401" target="_blank" rel="noopener" style="color:#e2e8f0; text-decoration: none;">117 Harthorn Ave, Bangor, ME 04401</a></li>
             <li style="margin-top: 8px;">📞 <strong>Phone:</strong> <a href="tel:2078121455" style="color:#fff; font-weight:700;">(207) 812-1455</a></li>
             <li>📞 <strong>Alt Line:</strong> <a href="tel:2076677070">(207) 667-7070</a></li>
             <li style="margin-top: 8px;">⏰ <strong>Hours:</strong><br><span style="color:#fbd6a6; font-weight:600;">Mon – Sun: 7:00 AM – 7:00 PM</span><br><span style="font-size:0.75rem; color:#94a3b8;">(Open 7 Days a Week)</span></li>
