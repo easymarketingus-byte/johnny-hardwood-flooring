@@ -1297,30 +1297,32 @@
       }
     }
     .mobile-sticky-bar .sticky-call-btn {
-      flex: 1.25;
+      flex: 1;
       background: var(--call-green);
       color: #ffffff;
       font-weight: 800;
       font-size: 0.95rem;
-      padding: 13px 8px;
+      padding: 13px 10px;
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
+      white-space: nowrap;
       box-shadow: 0 3px 10px rgba(21, 128, 61, 0.4);
     }
     .mobile-sticky-bar .sticky-quote-btn {
-      flex: 0.95;
+      flex: 1;
       background: var(--primary);
       color: #ffffff;
       font-weight: 700;
-      font-size: 0.88rem;
-      padding: 13px 8px;
+      font-size: 0.95rem;
+      padding: 13px 10px;
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
       justify-content: center;
+      white-space: nowrap;
     }
 
     /* TOAST NOTIFICATION */
@@ -2058,7 +2060,7 @@
   <!-- MOBILE STICKY BOTTOM CALL BAR - ALWAYS VISIBLE & EASY TO TAP -->
   <div class="mobile-sticky-bar">
     <a href="tel:2078121455" class="sticky-call-btn">
-      📞 Call Johnny (207) 812-1455
+      📞 Call Johnny
     </a>
     <a href="#quote-form" class="sticky-quote-btn">
       Free Estimate
